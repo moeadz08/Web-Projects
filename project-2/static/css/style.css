@@ -1,0 +1,91 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../img/2108.w026.n002.755B.p1.755.jpg") center / cover fixed;
+    overflow-y: auto;
+}
+
+
+/* content */
+
+.content {
+    min-height: 100vh;
+    /* biar tetap turun ke tengah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+
+/* card transparant */
+
+.registration-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 4rem;
+}
+
+.registration-card h1 {
+    font-weight: 750;
+}
+
+hr {
+    margin: 2rem;
+}
+
+
+/* input styling */
+
+input,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+
+/* button */
+
+button {
+    background: #5a193b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #751d50;
+}
+
+
+/* hasil hack */
+
+.hahaha {
+    margin-top: 3.5rem;
+    color: white;
+    text-align: center;
+}

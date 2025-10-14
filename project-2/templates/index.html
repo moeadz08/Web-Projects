@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="registration-card">
+            <h1>Registration</h1>
+            <hr>
+            <!-- form untuk registrasi -->
+            <form action="/" method="POST">
+                <label for="email-user">Email:</label>
+                <input type="email" id="email-user" name="email_post" required />
+                <br /><br />
+
+                <label for="pass-user">Password:</label>
+                <input type="password" id="pass-user" name="pass_post" required />
+                <br /><br />
+
+                <label for="pesan-user">Pesan:</label>
+                <textarea id="pesan-user" name="pesan_post" required></textarea>
+                <br /><br />
+
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+
+        <div class="hahaha">
+            {% if email_get %}
+            <h2>Hahaha, akun anda gw hack!</h2>
+            <p>Woy, email lu: <em>{{ email_get }}</em> dan password lu: <em>{{pass_get}},</em> ye kan?</p>
+            <p>Pesan anda: "{{pesan_get}}"</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>
