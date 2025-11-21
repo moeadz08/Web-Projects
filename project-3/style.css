@@ -2,7 +2,7 @@ body {
     background: #fff;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    padding: 20px;
+    padding: 0;
     margin: 0;
     color: #1a1a1a;
 }
@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     position: relative;
-    padding: 15px 0;
+    padding: 15px 20px;
     background: #fff;
     justify-content: space-between;
     align-items: center;
@@ -103,6 +103,7 @@ main.home {
     justify-content: space-between;
     max-width: 1150px;
     padding: 80px 20px 40px 20px;
+    margin: 0 auto;
 }
 
 .home-content-left {
@@ -318,5 +319,130 @@ span.btn2:hover {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+/* --- Responsive Design --- */
+
+
+/* For screens smaller than 1050px (e.g., tablets and smaller desktops) */
+
+@media (max-width: 1050px) {
+    main {
+        gap: 50px;
+        margin-top: 40px;
+    }
+    .home-content-left {
+        flex-basis: 50%;
+    }
+    .big-home h1 {
+        font-size: 36px;
+    }
+    .card-grid {
+        max-width: 400px;
+        gap: 15px;
+    }
+}
+
+
+/* For screens smaller than 800px (e.g., large tablets in portrait) */
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 5px;
+    }
+    .navbar {
+        margin-top: 15px;
+    }
+    .navbar a {
+        padding: 5px 8px;
+        font-size: 0.95em;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        gap: 60px;
+    }
+    .home-content-left {
+        flex-basis: auto;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .big-home {
+        max-width: 100%;
+    }
+    .big-home h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .big-home p {
+        max-width: 80%;
+        margin: 0 auto 15px auto;
+    }
+    .limapuluh {
+        flex-direction: column;
+        max-width: 300px;
+        text-align: left;
+        margin: 0 auto;
+    }
+    .card-grid {
+        max-width: 500px;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        padding: 10px;
+    }
+    header {
+        align-items: center;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .navbar a {
+        padding: 8px 0;
+        font-size: 1em;
+    }
+    .logo {
+        align-items: center;
+    }
+    .btn {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    .browse {
+        width: 80%;
+        max-width: 300px;
+        /* Limit button size */
+        padding: 12px;
+    }
+    .card-grid {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+    }
+    .card.tall {
+        grid-row: span 1;
+    }
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1190px) {
+    main {
+        max-width: 1150px;
+        padding: 0;
     }
 }

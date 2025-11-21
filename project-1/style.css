@@ -146,28 +146,6 @@ footer {
     border-top: 1px solid#fff;
 }
 
-
-/* @media (max-width: 768px) {
-    #hero {
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero-text {
-        max-width: 90%;
-    }
-    .hero-img img {
-        max-width: 250px;
-        margin-top: 1rem;
-    }
-}
- */
-
-
-/* ======== Responsive Tambahan ======== */
-
-
-/* Tablet */
-
 @media (max-width: 992px) {
     .container {
         padding: 20px 40px;
