@@ -10,22 +10,15 @@ body {
     overflow-y: auto;
 }
 
-
-/* content */
-
 .content {
     min-height: 100vh;
-    /* biar tetap turun ke tengah */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 10px;
 }
 
-
-/* card transparant */
-
-.registration-card {
+.guestbook-card {
     background: rgba(255, 255, 255, 0.2);
     padding: 30px;
     border-radius: 20px;
@@ -37,16 +30,13 @@ body {
     margin-top: 3rem;
 }
 
-.registration-card h1 {
+.guestbook-card h1 {
     font-weight: 750;
 }
 
 hr {
     margin: 2rem;
 }
-
-
-/* input styling */
 
 input,
 textarea {
@@ -66,10 +56,7 @@ textarea:focus {
     border-bottom: 1px solid #fff;
 }
 
-
-/* button */
-
-button {
+.guestbook-card button.btn {
     background: #5a193b;
     color: white;
     padding: 10px 20px;
@@ -79,12 +66,9 @@ button {
     margin-top: 15px;
 }
 
-button:hover {
+.guestbook-card button.btn:hover {
     background: #751d50;
 }
-
-
-/* hasil hack */
 
 .article {
     background-color: #FAFAFA;
@@ -114,7 +98,6 @@ button:hover {
     background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    box-sizing: border-box;
     transition: box-shadow 0.3s ease;
 }
 
@@ -138,17 +121,27 @@ button:hover {
     text-align: left;
 }
 
-
-/* alert */
+.error-status {
+    color: red;
+    background-color: #f4f4f4;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    margin: 1.5rem 0 0 0;
+    border: 1px solid red;
+}
 
 .alert {
     padding: 15px;
     font-size: 16px;
     font-weight: 700;
     margin: 1.5rem 0 0 0;
-    border: 1px solid transparent;
     border-radius: 8px;
-    background-color: #5f27e0;
-    color: #dcff15;
-    border-color: #c3e6cb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
 }

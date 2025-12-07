@@ -5,24 +5,17 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrasi</title>
-
+    <title>GuestBook</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
 
 <body>
-
     <div class="content">
-
-        <div class="registration-card">
-
-            <h1>Registration</h1>
-
+        <div class="guestbook-card">
+            <h1>GuestBook</h1>
             <hr>
-            <form action="/" method="POST" id="registrasi">
+            <form action="/" method="POST" id="guestbook">
                 <label for="email-user">Email:</label> <input type="email" id="email-user" name="email_post" /> <br /><br />
-
-                <label for="pass-user">Password:</label> <input type="password" id="pass-user" name="pass_post" /> <br /><br />
 
                 <label for="pesan-user">Pesan:</label>
 
@@ -31,11 +24,9 @@
                 <button type="submit" class="btn">Kirim</button>
                 <p id="form-status"></p>
             </form>
-
             {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {% for category, message in messages %}
             <div class="alert alert-{{ category }}">{{ message }}</div>
             {% endfor %} {% endif %} {% endwith %}
-
         </div>
 
         <div class="article">
@@ -44,10 +35,8 @@
             <div class="daftar_pesans">
 
                 <p><strong>Email: </strong> {{ entri.Email }}</p>
-
-                <p><strong>Password: </strong> {{ entri.Password }}</p>
-
                 <p><strong>Pesan: </strong> {{ entri.Pesan }}</p>
+
             </div>
             {% endfor %} {% else %}
             <p>Masih Kosong!</p>
