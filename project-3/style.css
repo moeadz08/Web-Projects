@@ -7,9 +7,6 @@ body {
     color: #1a1a1a;
 }
 
-
-/* hedar */
-
 header {
     display: flex;
     position: relative;
@@ -85,9 +82,6 @@ header {
     border-bottom: 1px solid black;
     bottom: 0px;
 }
-
-
-/*main*/
 
 main {
     display: flex;
@@ -223,9 +217,6 @@ span.btn2:hover {
     font-size: small;
 }
 
-
-/* --- Card Grid --- */
-
 .card-grid {
     max-width: 450px;
     display: grid;
@@ -280,9 +271,6 @@ span.btn2:hover {
     transform: translateY(0);
 }
 
-
-/* isi */
-
 .card-content .text h3 {
     margin: 0;
     font-weight: 700;
@@ -322,12 +310,6 @@ span.btn2:hover {
     }
 }
 
-
-/* --- Responsive Design --- */
-
-
-/* For screens smaller than 1050px (e.g., tablets and smaller desktops) */
-
 @media (max-width: 1050px) {
     main {
         gap: 50px;
@@ -344,9 +326,6 @@ span.btn2:hover {
         gap: 15px;
     }
 }
-
-
-/* For screens smaller than 800px (e.g., large tablets in portrait) */
 
 @media (max-width: 800px) {
     header {
